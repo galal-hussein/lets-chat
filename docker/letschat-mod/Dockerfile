@@ -4,7 +4,7 @@ USER root
 RUN set -x \
 && apt-get update \
 && apt-get install -yqq python python-pip python-setuptools \
-&& pip install dnspython
+&& pip install pydns
 
 ENV MONGO_SERVICE_NAME=mongo
 ADD mongoseed.sh mongoseed.sh
